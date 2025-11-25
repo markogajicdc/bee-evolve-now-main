@@ -8,8 +8,9 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   useEffect(() => {
+    // Set page title and meta description for SEO
     document.title = "Bee I4.0 - Industry 4.0 Business Process Automation Solutions";
-  
+
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
@@ -17,22 +18,22 @@ const Index = () => {
         "Transform your business with Bee I4.0's Industry 4.0 automation solutions. RPA bots, email automation, and end-to-end BI solutions to scale efficiently."
       );
     }
-  
+
     const script = document.createElement("script");
     script.src = "https://tob-chatbot.netlify.app/tob-widget.js";
     script.async = true;
     document.body.appendChild(script);
-  
+
+    // Cleanup if component unmounts
     return () => {
       document.body.removeChild(script);
     };
   }, []);
 
-
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="pt-16">
+      <main>
         <Hero />
         <About />
         <Products />
