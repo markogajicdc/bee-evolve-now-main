@@ -8,7 +8,6 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   useEffect(() => {
-    // Set page title and meta description for SEO
     document.title = "Bee I4.0 - Industry 4.0 Business Process Automation Solutions";
 
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -19,15 +18,22 @@ const Index = () => {
       );
     }
 
-    const script = document.createElement("script");
-    script.src = "https://tob-chatbot.netlify.app/tob-widget.js";
-    script.async = true;
-    document.body.appendChild(script);
+    // ✅ WONDERCHAT WIDGET INJECTION
+    if (!document.getElementById("wonderchat-script")) {
+      const script = document.createElement("script");
+      script.id = "wonderchat-script";
+      script.src = "https://app.wonderchat.io/scripts/wonderchat-seo.js";
+      script.defer = true;
 
-    // Cleanup if component unmounts
-    return () => {
-      document.body.removeChild(script);
-    };
+      // Required data attributes
+      script.setAttribute("data-name", "wonderchat-seo");
+      script.setAttribute("data-address", "app.wonderchat.io");
+      script.setAttribute("data-id", "cmi84xc2k0i1qdu9x7mbi0f2z");
+      script.setAttribute("data-widget-size", "normal");
+      script.setAttribute("data-widget-button-size", "normal");
+
+      document.body.appendChild(script);
+    }
   }, []);
 
   return (
