@@ -69,7 +69,7 @@ const Products = () => {
               {/* Icon */}
               <div className="mb-6">
                 <div className="w-16 h-16 rounded-lg bg-gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <product.icon className="h-8 w-8 text-foreground" />
+                  <product.icon className="h-8 w-8 text-black" />
                 </div>
               </div>
 

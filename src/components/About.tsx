@@ -68,7 +68,7 @@ const About = () => {
               <Card key={index} className="p-6 bg-card/50 backdrop-blur-sm border-border hover:border-primary/30 transition-all duration-300 hover:shadow-tech group">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <value.icon className="h-6 w-6 text-foreground" />
+                    <value.icon className="h-6 w-6 text-black" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2 text-foreground">{value.title}</h3>

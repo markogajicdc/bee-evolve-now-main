@@ -64,7 +64,7 @@ const Header = () => {
           <Button
             variant="hero"
             onClick={() => scrollToSection("contact")}
-            className="hidden md:inline-flex px-6 text-black"
+            className="hidden md:inline-flex px-6"
           >
             Get Started
           </Button>
@@ -108,7 +108,7 @@ const Header = () => {
             <Button
               variant="hero"
               onClick={() => scrollToSection("contact")}
-              className="w-full mt-4 text-black"
+              className="w-full mt-4"
             >
               Get Started
             </Button>

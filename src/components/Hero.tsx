@@ -110,7 +110,7 @@ const Hero = () => {
               variant="hero"
               size="lg"
               onClick={() => scrollToSection("products")}
-              className="px-8 text-black"
+              className="px-8"
             >
               Explore Solutions
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -120,7 +120,7 @@ const Hero = () => {
               variant="hero"
               size="lg"
               onClick={() => scrollToSection("contact")}
-              className="px-8 text-black"
+              className="px-8"
             >
               Schedule a Demo
             </Button>
