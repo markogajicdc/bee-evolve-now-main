@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Bot, BotMessageSquare, BarChart3 } from "lucide-react";
+import { ArrowRight, Workflow, BotMessageSquare, BarChart3 } from "lucide-react";
 import { useMemo } from "react";
 
 // Renders a regular hexagon with (slightly) rounded corners using SVG
@@ -90,8 +90,8 @@ const Hero = () => {
           {/* Key Benefits */}
           <div className="flex flex-wrap justify-center gap-3 md:gap-6 mb-8 md:mb-10">
             <div className="flex items-center space-x-2 bg-card/50 backdrop-blur-sm rounded-lg px-3 py-1.5 md:px-4 md:py-2 border border-border">
-              <Bot className="h-4 w-4 md:h-5 md:w-5 text-primary" />
-              <span className="text-xs md:text-sm text-foreground">Robotic Process Automation Solutions</span>
+              <Workflow className="h-4 w-4 md:h-5 md:w-5 text-primary" />
+              <span className="text-xs md:text-sm text-foreground">Business Process Automation Solutions</span>
             </div>
             <div className="flex items-center space-x-2 bg-card/50 backdrop-blur-sm rounded-lg px-3 py-1.5 md:px-4 md:py-2 border border-border">
               <BotMessageSquare className="h-4 w-4 md:h-5 md:w-5 text-secondary" />
