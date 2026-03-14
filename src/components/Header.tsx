@@ -19,7 +19,10 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <button
+            onClick={() => scrollToSection("home")}
+            className="flex items-center space-x-3 cursor-pointer"
+          >
             <img
               src={beeLogo}
               alt="Bee I4.0 Logo"
@@ -28,18 +31,10 @@ const Header = () => {
             <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               Bee I4.0
             </span>
-          </div>
-
-
+          </button>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection("home")}
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              Home
-            </button>
             <button
               onClick={() => scrollToSection("about")}
               className="text-foreground hover:text-primary transition-colors"
@@ -51,12 +46,6 @@ const Header = () => {
               className="text-foreground hover:text-primary transition-colors"
             >
               Our Products
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              Contact Us
             </button>
           </nav>
 
@@ -82,12 +71,6 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 space-y-4">
             <button
-              onClick={() => scrollToSection("home")}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors"
-            >
-              Home
-            </button>
-            <button
               onClick={() => scrollToSection("about")}
               className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors"
             >
@@ -99,12 +82,6 @@ const Header = () => {
             >
               Our Products
             </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors"
-            >
-              Contact Us
-            </button>
             <Button
               variant="hero"
               onClick={() => scrollToSection("contact")}
@@ -112,7 +89,6 @@ const Header = () => {
             >
               Contact Us
             </Button>
-
           </nav>
         )}
       </div>
