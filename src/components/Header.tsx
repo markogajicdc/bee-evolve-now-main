@@ -60,15 +60,14 @@ const Header = () => {
             </button>
           </nav>
 
-          {/* CTA Button */}
+          {/* CTA Button (desktop only) */}
           <Button
             variant="hero"
             onClick={() => scrollToSection("contact")}
-            className="px-6 text-black"
+            className="hidden md:inline-flex px-6 text-black"
           >
             Get Started
           </Button>
-
 
           {/* Mobile Menu Button */}
           <button

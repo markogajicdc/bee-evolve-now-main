@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Bot, Zap, BarChart3 } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
 import { useMemo } from "react";
 
 // Renders a regular hexagon with (slightly) rounded corners using SVG
@@ -13,10 +12,8 @@ const FloatingHexagon: React.FC<{
   filled?: boolean;             // filled vs outline
   delayMs?: number;             // animation delay
 }> = ({ size, top, left, right, colorClass, filled = false, delayMs = 0 }) => {
-  // Regular hex points (flat-top) in a normalized 100x100 viewBox
   const points = useMemo(() => {
-    const cx = 50, cy = 50, r = 45; // radius
-    // flat-top hexagon angles: -30, 30, 90, 150, 210, 270 deg
+    const cx = 50, cy = 50, r = 45;
     const deg = [-30, 30, 90, 150, 210, 270];
     return deg
       .map(a => {
@@ -25,6 +22,8 @@ const FloatingHexagon: React.FC<{
       })
       .join(" ");
   }, []);
+
+  const rotation = useMemo(() => Math.random() * 20 - 10, []);
 
   return (
     <svg
@@ -36,8 +35,7 @@ const FloatingHexagon: React.FC<{
         top,
         left,
         right,
-        // small random rotation for variety:
-        transform: `rotate(${Math.random() * 20 - 10}deg)`,
+        transform: `rotate(${rotation}deg)`,
         animationDelay: `${delayMs}ms`,
       }}
     >
