@@ -36,6 +36,12 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <button
+              onClick={() => scrollToSection("home")}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Home
+            </button>
+            <button
               onClick={() => scrollToSection("about")}
               className="text-foreground hover:text-primary transition-colors"
             >
@@ -45,7 +51,7 @@ const Header = () => {
               onClick={() => scrollToSection("products")}
               className="text-foreground hover:text-primary transition-colors"
             >
-              Our Products
+              Our Solutions
             </button>
           </nav>
 
@@ -71,6 +77,12 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 space-y-4">
             <button
+              onClick={() => scrollToSection("home")}
+              className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors"
+            >
+              Home
+            </button>
+            <button
               onClick={() => scrollToSection("about")}
               className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors"
             >
@@ -80,7 +92,7 @@ const Header = () => {
               onClick={() => scrollToSection("products")}
               className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors"
             >
-              Our Products
+              Our Solutions
             </button>
             <Button
               variant="hero"

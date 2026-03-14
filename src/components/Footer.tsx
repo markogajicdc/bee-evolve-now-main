@@ -70,7 +70,7 @@ const Footer = () => {
                   onClick={() => scrollToSection("products")}
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Our Products
+                  Our Solutions
                 </button>
               </li>
               <li>
@@ -84,15 +84,13 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Our Solutions */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-4">Services</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-4">Our Solutions</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>RPA Bots</li>
-              <li>Email Automation</li>
-              <li>BI & Data Solutions</li>
-              <li>Process Optimization</li>
-              <li>Analytics & Reporting</li>
+              <li>Business Process Automation</li>
+              <li>AI-Powered Support Agent</li>
+              <li>Business Intelligence Solutions</li>
             </ul>
           </div>
 
@@ -115,7 +113,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Bee I4.0. All rights reserved. | Built for Industry 4.0 Excellence
+            © {currentYear} Bee I4.0. All rights reserved.
           </p>
         </div>
       </div>
