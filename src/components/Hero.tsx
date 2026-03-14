@@ -73,7 +73,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Headline */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-4 md:mb-6 leading-tight">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Intelligent Automation
             </span>{" "}
@@ -82,29 +82,29 @@ const Hero = () => {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-xl md:text-2xl text-muted-foreground mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed">
             Bee I4.0 helps companies automate processes, deploy AI-powered assistants, 
             and unlock data-driven decisions through RPA and modern BI solutions.
           </p>
 
           {/* Key Benefits */}
-          <div className="flex flex-wrap justify-center gap-6 mb-10">
-            <div className="flex items-center space-x-2 bg-card/50 backdrop-blur-sm rounded-lg px-4 py-2 border border-border">
-              <Bot className="h-5 w-5 text-primary" />
-              <span className="text-sm text-foreground">Robotic Process Automation Solutions</span>
+          <div className="flex flex-wrap justify-center gap-3 md:gap-6 mb-8 md:mb-10">
+            <div className="flex items-center space-x-2 bg-card/50 backdrop-blur-sm rounded-lg px-3 py-1.5 md:px-4 md:py-2 border border-border">
+              <Bot className="h-4 w-4 md:h-5 md:w-5 text-primary" />
+              <span className="text-xs md:text-sm text-foreground">RPA Solutions</span>
             </div>
-            <div className="flex items-center space-x-2 bg-card/50 backdrop-blur-sm rounded-lg px-4 py-2 border border-border">
-              <BotMessageSquare className="h-5 w-5 text-secondary" />
-              <span className="text-sm text-foreground">AI-Powered Support Agent</span>
+            <div className="flex items-center space-x-2 bg-card/50 backdrop-blur-sm rounded-lg px-3 py-1.5 md:px-4 md:py-2 border border-border">
+              <BotMessageSquare className="h-4 w-4 md:h-5 md:w-5 text-secondary" />
+              <span className="text-xs md:text-sm text-foreground">AI Support Agent</span>
             </div>
-            <div className="flex items-center space-x-2 bg-card/50 backdrop-blur-sm rounded-lg px-4 py-2 border border-border">
-              <BarChart3 className="h-5 w-5 text-accent" />
-              <span className="text-sm text-foreground">Business Intelligence Solutions</span>
+            <div className="flex items-center space-x-2 bg-card/50 backdrop-blur-sm rounded-lg px-3 py-1.5 md:px-4 md:py-2 border border-border">
+              <BarChart3 className="h-4 w-4 md:h-5 md:w-5 text-accent" />
+              <span className="text-xs md:text-sm text-foreground">BI Solutions</span>
             </div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
             <Button
               variant="hero"
               size="lg"
