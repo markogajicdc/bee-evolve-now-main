@@ -61,7 +61,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-[calc(100vh-72px)] flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative py-12 md:min-h-[calc(100vh-72px)] flex items-center justify-center overflow-hidden">
 
       
       {/* Floating Hexagons */}
