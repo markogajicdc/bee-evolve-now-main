@@ -75,32 +75,31 @@ const Hero = () => {
           {/* Headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Automate
+              Intelligent Automation
             </span>{" "}
-            Your Business
             <br />
-            <span className="text-foreground">Into the Future</span>
+            <span className="text-foreground">for the Modern Business</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Transform your operations with Industry 4.0 automation solutions. 
-            From RPA bots to advanced BI analytics, we help businesses scale efficiently and intelligently.
+            Bee I4.0 helps companies automate processes, deploy AI-powered assistants, 
+            and unlock data-driven decisions through RPA and modern BI solutions.
           </p>
 
           {/* Key Benefits */}
           <div className="flex flex-wrap justify-center gap-6 mb-10">
             <div className="flex items-center space-x-2 bg-card/50 backdrop-blur-sm rounded-lg px-4 py-2 border border-border">
               <Bot className="h-5 w-5 text-primary" />
-              <span className="text-sm text-foreground">RPA Automation</span>
+              <span className="text-sm text-foreground">Robotic Process Automation Solutions</span>
             </div>
             <div className="flex items-center space-x-2 bg-card/50 backdrop-blur-sm rounded-lg px-4 py-2 border border-border">
               <Zap className="h-5 w-5 text-secondary" />
-              <span className="text-sm text-foreground">Smart Alerts</span>
+              <span className="text-sm text-foreground">24/7 AI Chatbot Assistant</span>
             </div>
             <div className="flex items-center space-x-2 bg-card/50 backdrop-blur-sm rounded-lg px-4 py-2 border border-border">
               <BarChart3 className="h-5 w-5 text-accent" />
-              <span className="text-sm text-foreground">BI Solutions</span>
+              <span className="text-sm text-foreground">Business Intelligence Solutions</span>
             </div>
           </div>
 

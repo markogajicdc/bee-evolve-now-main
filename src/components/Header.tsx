@@ -66,7 +66,7 @@ const Header = () => {
             onClick={() => scrollToSection("contact")}
             className="hidden md:inline-flex px-6"
           >
-            Get Started
+            Contact Us
           </Button>
 
           {/* Mobile Menu Button */}
@@ -110,7 +110,7 @@ const Header = () => {
               onClick={() => scrollToSection("contact")}
               className="w-full mt-4"
             >
-              Get Started
+              Contact Us
             </Button>
 
           </nav>
