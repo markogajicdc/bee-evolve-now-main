@@ -88,6 +88,10 @@ All colors MUST be HSL.
 }
 
 @layer base {
+  html {
+    scroll-padding-top: 72px;
+  }
+
   * {
     @apply border-border;
   }
