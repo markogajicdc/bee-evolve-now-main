@@ -91,15 +91,15 @@ const Hero = () => {
           <div className="flex flex-wrap justify-center gap-3 md:gap-6 mb-8 md:mb-10">
             <div className="flex items-center space-x-2 bg-card/50 backdrop-blur-sm rounded-lg px-3 py-1.5 md:px-4 md:py-2 border border-border">
               <Bot className="h-4 w-4 md:h-5 md:w-5 text-primary" />
-              <span className="text-xs md:text-sm text-foreground">RPA Solutions</span>
+              <span className="text-xs md:text-sm text-foreground">Robotic Process Automation Solutions</span>
             </div>
             <div className="flex items-center space-x-2 bg-card/50 backdrop-blur-sm rounded-lg px-3 py-1.5 md:px-4 md:py-2 border border-border">
               <BotMessageSquare className="h-4 w-4 md:h-5 md:w-5 text-secondary" />
-              <span className="text-xs md:text-sm text-foreground">AI Support Agent</span>
+              <span className="text-xs md:text-sm text-foreground">AI-Powered Support Agent</span>
             </div>
             <div className="flex items-center space-x-2 bg-card/50 backdrop-blur-sm rounded-lg px-3 py-1.5 md:px-4 md:py-2 border border-border">
               <BarChart3 className="h-4 w-4 md:h-5 md:w-5 text-accent" />
-              <span className="text-xs md:text-sm text-foreground">BI Solutions</span>
+              <span className="text-xs md:text-sm text-foreground">Business Intelligence Solutions</span>
             </div>
           </div>
 
