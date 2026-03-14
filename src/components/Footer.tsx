@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img src={beeLogo} alt="Bee I4.0 Logo" className="h-8 w-8" />
+              <img src={beeLogo} alt="Bee I4.0 Logo" className="h-8 w-auto object-contain" />
               <span className="text-lg font-bold bg-gradient-primary bg-clip-text text-transparent">
                 Bee I4.0
               </span>
