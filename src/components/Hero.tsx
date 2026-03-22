@@ -118,8 +118,9 @@ const Hero = () => {
               onClick={() => scrollToSection("contact")}
               className="px-12 py-4 text-lg"
             >
-              How can we help?
+              Get a custom automation plan
             </Button>
+            <span className="text-xs italic text-muted-foreground">Free consultation</span>
           </div>
         </div>
       </div>
