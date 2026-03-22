@@ -106,14 +106,6 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col items-center gap-3 md:gap-4">
             <Button
-              variant="outline"
-              onClick={() => scrollToSection("products")}
-              className="px-6 py-2.5 text-base"
-            >
-              Explore Solutions
-            </Button>
-
-            <Button
               variant="hero"
               onClick={() => scrollToSection("contact")}
               className="px-12 py-4 text-lg"
