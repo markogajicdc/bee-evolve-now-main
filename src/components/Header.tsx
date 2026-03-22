@@ -49,7 +49,7 @@ const Header = () => {
             </button>
             <button
               onClick={() => scrollToSection("products")}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-primary font-semibold transition-colors"
             >
               Our Solutions
             </button>
@@ -90,7 +90,7 @@ const Header = () => {
             </button>
             <button
               onClick={() => scrollToSection("products")}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors"
+              className="block w-full text-left py-2 text-primary font-semibold transition-colors"
             >
               Our Solutions
             </button>
