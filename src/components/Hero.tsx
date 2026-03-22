@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Workflow, BotMessageSquare, BarChart3 } from "lucide-react";
+import { ArrowRight, Settings, BotMessageSquare, BarChart3 } from "lucide-react";
 import { useMemo } from "react";
 
 // Renders a regular hexagon with (slightly) rounded corners using SVG
@@ -88,11 +88,7 @@ const Hero = () => {
           </p>
 
           {/* Key Benefits */}
-          <div className="flex flex-wrap justify-center gap-3 md:gap-6 mb-8 md:mb-10">
-            <div className="flex items-center space-x-2 bg-card/50 backdrop-blur-sm rounded-lg px-3 py-1.5 md:px-4 md:py-2 border border-border">
-              <Workflow className="h-4 w-4 md:h-5 md:w-5 text-primary" />
-              <span className="text-xs md:text-sm text-foreground">Business Process Automation Solutions</span>
-            </div>
+          <div className="flex flex-wrap justify-center gap-3 md:gap-6 mb-6 md:mb-8">
             <div className="flex items-center space-x-2 bg-card/50 backdrop-blur-sm rounded-lg px-3 py-1.5 md:px-4 md:py-2 border border-border">
               <BotMessageSquare className="h-4 w-4 md:h-5 md:w-5 text-secondary" />
               <span className="text-xs md:text-sm text-foreground">AI-Powered Support Agent</span>
@@ -101,27 +97,30 @@ const Hero = () => {
               <BarChart3 className="h-4 w-4 md:h-5 md:w-5 text-accent" />
               <span className="text-xs md:text-sm text-foreground">Business Intelligence Solutions</span>
             </div>
+            <div className="flex items-center space-x-2 bg-card/50 backdrop-blur-sm rounded-lg px-3 py-1.5 md:px-4 md:py-2 border border-border">
+              <Settings className="h-4 w-4 md:h-5 md:w-5 text-primary" />
+              <span className="text-xs md:text-sm text-foreground">Business Process Automation Solutions</span>
+            </div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-            <Button
-              variant="hero"
-              size="lg"
-              onClick={() => scrollToSection("products")}
-              className="px-8"
-            >
-              Explore Solutions
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-
+          <div className="flex flex-col items-center gap-3 md:gap-4">
             <Button
               variant="hero"
               size="lg"
               onClick={() => scrollToSection("contact")}
-              className="px-8"
+              className="px-10"
             >
-              Schedule a Demo
+              How can we help?
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => scrollToSection("products")}
+            >
+              Explore Solutions
             </Button>
           </div>
         </div>
